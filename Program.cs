@@ -12,6 +12,8 @@ namespace Cosmos_1
             for (; !runner.program[runner.index].Equals(0);)
                 runner.RunNext();
 
+            Console.WriteLine(runner.ram[0]);
+
             watch.Stop();
             var elapsedMs = watch.ElapsedMilliseconds;
             Console.WriteLine("\nExecution time: "+ elapsedMs);
