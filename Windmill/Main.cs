@@ -43,6 +43,9 @@ namespace Cosmos_1.Windmill
                 case 0x03:
                     Lib.Input.FindFunction(this);
                     break;
+                case 0x04:
+                    Lib.Math.FindFunction(this);
+                    break;
             }
         }
     }
