@@ -6,10 +6,15 @@ namespace Cosmos_1.Windmill.Lib
 {
     static class Math
     {
-        public static void FindFunction(Windmill super)
+        public static void Calculate(Windmill super)
         {
+            int op = super.program[super.index] % 16;
             super.index++;
-            switch (super.program[super.index - 1] % 16)
+
+            int loc1 = Memory.GetRamLoc(super);
+            int loc2 = Memory.GetRamLoc(super);
+
+            switch (op)
             {
                 case 0x00:
                     //add
