@@ -1,0 +1,13 @@
+D:\Users\ALMA\source\repos\Cosmos-1\bin\Debug\netcoreapp3.1\Cosmos-1.exe
+D:\Users\ALMA\source\repos\Cosmos-1\bin\Debug\netcoreapp3.1\Cosmos-1.deps.json
+D:\Users\ALMA\source\repos\Cosmos-1\bin\Debug\netcoreapp3.1\Cosmos-1.runtimeconfig.json
+D:\Users\ALMA\source\repos\Cosmos-1\bin\Debug\netcoreapp3.1\Cosmos-1.runtimeconfig.dev.json
+D:\Users\ALMA\source\repos\Cosmos-1\bin\Debug\netcoreapp3.1\Cosmos-1.dll
+D:\Users\ALMA\source\repos\Cosmos-1\bin\Debug\netcoreapp3.1\Cosmos-1.pdb
+D:\Users\ALMA\source\repos\Cosmos-1\obj\Debug\netcoreapp3.1\Cosmos-1.csprojAssemblyReference.cache
+D:\Users\ALMA\source\repos\Cosmos-1\obj\Debug\netcoreapp3.1\Cosmos-1.AssemblyInfoInputs.cache
+D:\Users\ALMA\source\repos\Cosmos-1\obj\Debug\netcoreapp3.1\Cosmos-1.AssemblyInfo.cs
+D:\Users\ALMA\source\repos\Cosmos-1\obj\Debug\netcoreapp3.1\Cosmos-1.csproj.CoreCompileInputs.cache
+D:\Users\ALMA\source\repos\Cosmos-1\obj\Debug\netcoreapp3.1\Cosmos-1.dll
+D:\Users\ALMA\source\repos\Cosmos-1\obj\Debug\netcoreapp3.1\Cosmos-1.pdb
+D:\Users\ALMA\source\repos\Cosmos-1\obj\Debug\netcoreapp3.1\Cosmos-1.genruntimeconfig.cache

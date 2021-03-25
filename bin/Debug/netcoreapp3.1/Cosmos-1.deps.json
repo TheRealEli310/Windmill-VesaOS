@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "Cosmos-1/1.0.0": {
+        "runtime": {
+          "Cosmos-1.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Cosmos-1/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
