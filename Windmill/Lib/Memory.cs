@@ -43,7 +43,6 @@ namespace Cosmos_1.Windmill.Lib
             int loc = GetRamLoc(super);
             super.index++;
             byte val = super.program[super.index];
-
             super.ram[loc] = val;
         }
 

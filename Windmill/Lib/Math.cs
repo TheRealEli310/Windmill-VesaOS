@@ -20,7 +20,7 @@ namespace Cosmos_1.Windmill.Lib
             }
         }
 
-        public static void CalculateByte(Windmill super)
+        private static void CalculateByte(Windmill super)
         {
             int op = super.program[super.index] % 16;
             super.index++;
@@ -49,7 +49,7 @@ namespace Cosmos_1.Windmill.Lib
             }
         }
 
-        public static void CalculateInt(Windmill super)
+        private static void CalculateInt(Windmill super)
         {
             int op = super.program[super.index];
 

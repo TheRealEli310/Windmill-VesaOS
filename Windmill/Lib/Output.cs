@@ -23,7 +23,6 @@ namespace Cosmos_1.Windmill.Lib
         public static void PrintChar(Windmill super)
         {
             int loc = Memory.GetRamLoc(super);
-            Console.WriteLine(loc);
             Console.Write((char) super.ram[loc]);
         }
 
