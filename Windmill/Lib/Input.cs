@@ -17,6 +17,9 @@ namespace Cosmos_1.Windmill.Lib
                 case 0x01:
                     ReadLine(super);
                     break;
+                case 0x02:
+                    ReadKey(super);
+                    break;
             }
         }
 
@@ -34,6 +37,14 @@ namespace Cosmos_1.Windmill.Lib
             string input = Console.ReadLine() + (char) 0; //end of string
             for (int i = 0; i < input.Length; i++)
                 super.ram[loc + i] = (byte) input[i];
+        }
+
+        private static void ReadKey(Windmill super)
+        {            
+            int loc = Memory.GetRamLoc(super);
+
+            ConsoleKey consoleKey = Console.ReadKey().Key;
+            super.ram[loc] = (byte) consoleKey;
         }
     }
 }
