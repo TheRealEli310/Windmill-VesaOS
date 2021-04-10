@@ -17,16 +17,34 @@ namespace Cosmos_1.Windmill.Lib
                 case 0x01:
                     PrintString(super);
                     break;
+                case 0x02:
+                    SetForeGroundColor(super);
+                    break;
+                case 0x03:
+                    SetBackGroundColor(super);
+                    break;
             }
         }
 
-        public static void PrintChar(Windmill super)
+        static void SetBackGroundColor(Windmill super)
+        {
+            byte type = super.program[super.index];
+            Console.BackgroundColor = (ConsoleColor)type;
+        }
+
+        static void SetForeGroundColor(Windmill super)
+        {
+            byte type = super.program[super.index];
+            Console.ForegroundColor = (ConsoleColor)type;
+        }
+
+        static void PrintChar(Windmill super)
         {
             int loc = Memory.GetRamLoc(super);
             Console.Write((char) super.ram[loc]);
         }
 
-        public static void PrintString(Windmill super)
+        static void PrintString(Windmill super)
         {
             int loc = Memory.GetRamLoc(super);
             string capture = "";
