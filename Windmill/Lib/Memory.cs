@@ -43,7 +43,6 @@ namespace Cosmos_1.Windmill.Lib
             int loc = GetRamLoc(super);
             super.index++;
             byte val = super.program[super.index];
-
             super.ram[loc] = val;
         }
 
@@ -53,7 +52,6 @@ namespace Cosmos_1.Windmill.Lib
             super.index++;
 
             byte len = super.program[super.index];
-            Console.WriteLine(len);
             
             for (int i = 0; i < len; i++)
             {
@@ -72,6 +70,18 @@ namespace Cosmos_1.Windmill.Lib
                 super.ram[loc + i] = super.program[super.index];
                 super.index++;
             }
+        }
+
+        //returns x bytes at loc
+        public static byte[] GetByteArray(Windmill super, int loc, int len)
+        {
+            byte[] bytes = new byte[len];
+            for (int i = 0; i < len; i++)
+            {
+                bytes[i] = super.ram[loc + i];
+            }
+
+            return bytes;
         }
     }
 }

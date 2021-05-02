@@ -6,21 +6,14 @@ namespace Cosmos_1.Windmill
 {
     class Windmill
     {
-        public byte[] program = new byte[]
-        {
-            0x12, 0x00, 0x00, 0x00, 0x00, 0x48, 0x65, 0x6c, 0x6c, 0x6f, 0x20, 0x77, 0x6f, 0x72, 0x6c, 0x64, 0x21, 0x0a, 0x00,
-            0x21, 0x00, 0x00, 0x00, 0x00,
-            0x31, 0x00, 0x00, 0x00, 0x40,
-            0x21, 0x00, 0x00, 0x00, 0x40,
-            0x00, 
-        }
-        ;
+        public byte[] program;
 
         public byte[] ram;
         public int index;
 
-        public Windmill(uint mAlloc)
+        public Windmill(uint mAlloc, byte[] program)
         {
+            this.program = program;
             ram = new byte[mAlloc];
         }
 
@@ -42,6 +35,12 @@ namespace Cosmos_1.Windmill
                     break;
                 case 0x03:
                     Lib.Input.FindFunction(this);
+                    break;
+                case 0x04:
+                    Lib.Math.FindFunction(this);
+                    break;
+                case 0x05:
+                    Lib.Utilities.FindFunction(this);
                     break;
             }
         }
